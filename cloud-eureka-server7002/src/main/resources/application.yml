@@ -1,0 +1,15 @@
+server:
+  port: 7002
+
+eureka:
+  instance:
+    hostname: eureka7002.com #eureka service's instance name
+  client:
+    #false indicate not registering eureka itself
+    register-with-eureka: false
+    #false indicate my duty is to maintain the service instance,not to retrieve the service
+    fetch-registry: false
+    service-url:
+      #set the interacting URL of Eureka Server,Retrieving Service and registering service
+      #both depend this defaultZone
+      defaultZone:  http://eureka7001:7001/eureka/,http://eureka7003:7003/eureka/

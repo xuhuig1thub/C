@@ -1,0 +1,5 @@
+D:\IDEAWorkspace\com.a\C\cloud-consumer-feign-hystrix-order80\src\main\java\com\a\config\ResidConfig.java
+D:\IDEAWorkspace\com.a\C\cloud-consumer-feign-hystrix-order80\src\main\java\com\a\service\PaymentFallbackServiceImpl.java
+D:\IDEAWorkspace\com.a\C\cloud-consumer-feign-hystrix-order80\src\main\java\com\a\service\PaymentHystrixService.java
+D:\IDEAWorkspace\com.a\C\cloud-consumer-feign-hystrix-order80\src\main\java\com\a\OrderHystrixMain80.java
+D:\IDEAWorkspace\com.a\C\cloud-consumer-feign-hystrix-order80\src\main\java\com\a\controller\OrderHystrixController.java

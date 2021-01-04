@@ -1,0 +1,45 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:C:\Users\Mr Xu\springcloud-cloud
+#        bootstrap: true
+#        default-profile: test
+#        label: master
+      label: master
+  profiles:
+    active: native
+#        git:
+#          skipSslValidation: true # 跳过ssl认证
+#          uri: C:\Users\Mr Xu\springcloud-cloud
+#          username: xuhuig1thub
+#          password: 1L0veG1thub
+#          default-lable:  master
+#          search-paths:
+#            - springcloud-cloud
+
+
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka
+
+# rabbitmq relative refreshing config,暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
